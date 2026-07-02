@@ -3,7 +3,6 @@
 > Scans the software supply chain for vulnerable, malicious or non-compliant
 > dependencies and hardens it against SLSA standards. A research-first,
 > framework-grounded harness skill in the **Software, Code & Infra
-> (`software-devops`)** cluster (idea #207).
 
 [![tests](https://img.shields.io/badge/tests-41%20passing-brightgreen)](tests/test_harness.py)
 [![python](https://img.shields.io/badge/python-3.10%2B-blue)](tools/knowledge_updater.py)
