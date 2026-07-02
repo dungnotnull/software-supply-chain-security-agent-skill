@@ -1,0 +1,14 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Knowledge updater runtime artifacts
+tools/knowledge_updater.config.json
+logs/
+
+# OS
+.DS_Store
+Thumbs.db

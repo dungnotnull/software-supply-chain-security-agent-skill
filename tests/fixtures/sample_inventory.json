@@ -1,0 +1,81 @@
+{
+  "generated_at": "2026-07-02T00:00:00Z",
+  "scope": "full",
+  "degradation_flags": ["no_provenance"],
+  "env_context": {
+    "languages": ["python", "javascript"],
+    "os_targets": ["linux"],
+    "deploy_model": "saas",
+    "regulatory": ["SOC2"]
+  },
+  "policy": {
+    "allowed_licenses": ["MIT", "Apache-2.0", "BSD-3-Clause", "ISC"],
+    "disallowed_licenses": ["GPL-3.0-only", "AGPL-3.0-only"],
+    "allow_weak_copyleft": false,
+    "allow_strong_copyleft": false,
+    "require_full_spdx": true,
+    "max_cvss_to_allow": 7.0,
+    "required_slsa_level": 3,
+    "require_signature": true,
+    "maintainer_trust": { "min_downloads": 1000, "min_age_days": 90, "require_2fa": true }
+  },
+  "dependencies": [
+    {
+      "id": "pypi|requests|2.31.0",
+      "ecosystem": "pypi",
+      "name": "requests",
+      "version": "2.31.0",
+      "version_pinned": true,
+      "is_direct": true,
+      "registry": "https://pypi.org/",
+      "license": "Apache-2.0",
+      "maintainer": { "name": "psf", "account_age_days": 3650, "publish_count": 200, "has_2fa": true },
+      "popularity": { "downloads_30d": 500000000 },
+      "last_published": "2023-05-22",
+      "signature": { "scheme": "none", "verified": false },
+      "provenance_signals": { "source_repo": "https://github.com/psf/requests", "build_service": null, "build_hash": null, "slsa_signals": [] },
+      "vulnerabilities_known": []
+    },
+    {
+      "id": "npm|lodas|1.0.0",
+      "ecosystem": "npm",
+      "name": "lodas",
+      "version": "1.0.0",
+      "version_pinned": false,
+      "is_direct": true,
+      "registry": "https://registry.npmjs.org/",
+      "license": "UNKNOWN",
+      "maintainer": { "name": "anon", "account_age_days": 30, "publish_count": 1, "has_2fa": false },
+      "popularity": { "downloads_30d": 12 },
+      "last_published": "2026-06-25",
+      "signature": { "scheme": "none", "verified": false },
+      "provenance_signals": { "source_repo": null, "build_service": null, "build_hash": null, "slsa_signals": [] },
+      "vulnerabilities_known": []
+    },
+    {
+      "id": "npm|left-pad|1.3.0",
+      "ecosystem": "npm",
+      "name": "left-pad",
+      "version": "1.3.0",
+      "version_pinned": true,
+      "is_direct": false,
+      "registry": "https://registry.npmjs.org/",
+      "license": "GPL-3.0-only",
+      "maintainer": { "name": "azer", "account_age_days": 4000, "publish_count": 300, "has_2fa": true },
+      "popularity": { "downloads_30d": 90000000 },
+      "last_published": "2026-01-10",
+      "signature": { "scheme": "none", "verified": false },
+      "provenance_signals": { "source_repo": "https://github.com/azer/left-pad", "build_service": null, "build_hash": null, "slsa_signals": [] },
+      "vulnerabilities_known": []
+    }
+  ],
+  "pipeline": {
+    "platform": "github",
+    "jobs": [
+      { "name": "build", "uses_third_party_actions": true, "pinned_to_sha": false, "uses_secrets": true, "runs_on": "ubuntu-latest" }
+    ],
+    "base_images": [ { "image": "ubuntu:22.04", "digest": null, "is_pinned": false, "scanner_passed": false } ],
+    "secrets_handling": { "masked_in_logs": true, "oidc_used": false, "vault_used": false }
+  },
+  "coverage": { "sbom_present": false, "lockfile_present": true, "provenance_present": false, "percent_dependencies_enriched": 0.66 }
+}

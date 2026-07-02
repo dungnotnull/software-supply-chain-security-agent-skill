@@ -1,0 +1,44 @@
+{
+  "scanned_at": "2026-07-02T00:00:00Z",
+  "advisory_sources_used": ["osv", "nvd", "epss"],
+  "degraded": false,
+  "findings": [
+    {
+      "dependency_id": "pypi|requests|2.31.0",
+      "cve_id": "CVE-2023-32681",
+      "cvss_v3_score": 7.5,
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "epss_score": 0.00120,
+      "epss_percentile": 0.46,
+      "severity": "high",
+      "affected_range": "<2.31.0",
+      "fixed_versions": ["2.31.0"],
+      "fix_available_for_installed": false,
+      "published": "2023-05-22",
+      "advisory_url": "https://osv.dev/vulnerability/GHSA-j8r2-6x86-q33q",
+      "evidence_tier": "advisory",
+      "reachability": null,
+      "reachability_assumption": true
+    },
+    {
+      "dependency_id": "npm|left-pad|1.3.0",
+      "cve_id": "CVE-2024-99999",
+      "cvss_v3_score": 9.8,
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "epss_score": 0.62,
+      "epss_percentile": 0.97,
+      "severity": "critical",
+      "affected_range": ">=1.0.0 <1.3.1",
+      "fixed_versions": ["1.3.1"],
+      "fix_available_for_installed": true,
+      "published": "2024-01-15",
+      "advisory_url": "https://osv.dev/vulnerability/CVE-2024-99999",
+      "evidence_tier": "advisory",
+      "reachability": 0.8,
+      "reachability_assumption": false
+    }
+  ],
+  "risk_assessments": [
+    { "dependency_id": "npm|lodas|1.0.0", "maintenance": "nascent-risk", "bus_factor": 1, "typosquat_risk": 0.85, "typosquat_signals": ["levenshtein<=2 from lodash", "account_age<90d", "publish_count==1", "no_source_repo"], "malicious_advisory_hits": [], "patch_responsiveness_proxy": 0 }
+  ]
+}
